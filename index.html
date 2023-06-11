@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Costx</title>
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Calculadora De Costos</h1>
+        <p>Recuerda que en gramos totales, debes poner la porción para una sola unidad.</p>
+        <span>Nombre Del Producto:</span><input id="NombrePro" type="text" placeholder="" name="" id="">
+        
+        <div id="ingredientesContainer">
+            
+            <span class="is">Ingredientes:</span><button onclick="agregarIngrediente()">Agregar Ingrediente</button>
+            <span>Nombre:</span><span>Precio:</span><span>Gramos T:</span><span>Gramos N:</span>
+        </div>
+
+        <button class="calcularBtn" onclick="obtenerValores()">Obtener Valores</button>
+        <button class="restablecerBtn" onclick="restablecerValores()">Restablecer</button>
+        <div id="nombreProductoDiv"></div>
+        <div id="resultadoContainer"></div>
+
+    </div>
+
+    <div class="rs">
+        <span>Developed by </span><a href="https://github.com/MartinFitS">@martinfits</a>
+    </div>
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>
